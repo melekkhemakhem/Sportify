@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:background="@drawable/back">
+    <TextView
+            android:id="@+id/title_poids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Saisir le poids:"
+            android:textSize="25sp"
+            android:textColor="#473FB5"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="200dp"
+            android:textStyle="bold"/>
+
+    <EditText
+            android:id="@+id/weight_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valeur de poids"
+            android:inputType="numberDecimal"/>
+    <TextView
+            android:id="@+id/title_taille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Saisir le taille:"
+            android:textSize="25sp"
+            android:textColor="#473FB5"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="200dp"
+            android:textStyle="bold"/>
+
+    <EditText
+            android:id="@+id/height_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valeur de taille"
+            android:inputType="number"/>
+    <TextView
+            android:id="@+id/title_sexe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Votre sexe:"
+            android:textSize="25sp"
+            android:textColor="#473FB5"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="200dp"
+            android:textStyle="bold"/>
+
+    <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+        <RadioButton
+                android:id="@+id/rbtOui"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Homme"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        <RadioButton
+                android:id="@+id/rbtNon"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="Femme"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        <!-- (TODO) RadioButton “rbtNon” à compléter -->
+    </RadioGroup>
+
+    <Button
+            android:id="@+id/buttonNavigateToSecondActivity"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:onClick="calculer"
+            android:text="Calculer votre IMC"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+    />
+
+    <TextView
+            android:id="@+id/imc_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="#473FB5"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/imc_description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#473FB5"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+</LinearLayout>
